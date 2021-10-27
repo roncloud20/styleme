@@ -1,38 +1,74 @@
 .App {
   text-align: center;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* HEADER */
+header {
+  background-color: #000407;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-transform: uppercase;
+  font-family: monospace;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+nav > li {
+  list-style: none;
+  padding: 0px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav > li > a {
+  text-decoration: none;
+  color: #f5f7f7;
+  font-size: 0.6em;
+}
+
+nav > li > a:hover {
+  color: #edb518;
+  border-bottom: solid #f5f7f7 1px;
+}
+
+/* MAIN BODY */
+main {
+  background-color: #79031d;
+  display: flex;
+  justify-content: center;
+}
+.Card {
+  border-radius: 10px;
+  height: 500px;
+  width: 80vw;
+  color: #f5f7f7;
+  background-color: #edb518;
+  margin: 20px auto;
+  box-shadow: #000407;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  align-items: flex-end;
+  list-style: none;
+  padding-bottom: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Card > .Likes > span {
+  font-size: 1.1em;
+  color: red;
+}
+
+.Card > .Add > button {
+  background-color: #edb518;
+  color: #79031d;
+  border-radius: 1px;
 }
