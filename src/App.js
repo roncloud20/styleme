@@ -1,5 +1,5 @@
 import './App.css';
-import Card from './Card.js';
+import CardList from './CardList';
 import { styles } from './styles.js';
 
 function App() {
@@ -24,11 +24,7 @@ function App() {
         </nav>
       </header>
       <main>
-        <Card id={styles[0].id} styleName={styles[0].styleName} category={styles[0].category} likes={styles[0].likes} imageUrl={styles[0].imageUrl} />
-        <Card id={styles[1].id} styleName={styles[1].styleName} category={styles[1].category} likes={styles[1].likes} imageUrl={styles[1].imageUrl} />
-        <Card id={styles[2].id} styleName={styles[2].styleName} category={styles[2].category} likes={styles[2].likes} imageUrl={styles[2].imageUrl} />
-        <Card id={styles[3].id} styleName={styles[3].styleName} category={styles[3].category} likes={styles[3].likes} imageUrl={styles[3].imageUrl} />
-        <Card id={styles[4].id} styleName={styles[4].styleName} category={styles[4].category} likes={styles[4].likes} imageUrl={styles[4].imageUrl} />
+        <CardList styles={styles} />
       </main>
     </div>
   );
