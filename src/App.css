@@ -14,6 +14,7 @@ header {
   color: white;
   text-transform: uppercase;
   font-family: monospace;
+  margin-bottom: 20px;
 }
 
 nav {
@@ -38,25 +39,18 @@ nav > li > a:hover {
 }
 
 /* MAIN BODY */
-main {
-
-  /* background-color: #79031d; */
+.Card {
+  height: 80vh;
+  width: 100%;
+  color: #111111;
+  background-color: #edb518;
+  box-shadow: #000407;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.Card {
-  border-radius: 10px;
-  height: 500px;
-  width: 80vw;
-  color: #f5f7f7;
-  background-color: #edb518;
-  margin: 20px auto;
-  box-shadow: #000407;
-  display: flex;
-  justify-content: space-around;
-  align-content: flex-end;
+  gap: 40px;
+  font-size: 20px;
+  font-weight: bolder;
   align-items: flex-end;
   list-style: none;
   padding-bottom: 10px;
@@ -65,24 +59,21 @@ main {
   background-size: cover;
 }
 
-.Card > .Likes > span {
-  font-size: 1.1em;
-  color: red;
-}
+/* Web View */
+@media screen and (min-width: 425px) {
+  .Main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
 
-.Card > .Add > div {
-  /* background-color: #edb518; */
-  color: #79031d;
-  border-radius: 1px;
-  text-align: center;
-  border: solid 1px;
-  width: 70px;
-  border-radius: 23px;
-  cursor: pointer;
-}
-
-.Card > .Add > div:hover {
-  background-color: #edb518;
-  width: 80px;
-  height: 25px;
+  .Card {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+  }
 }

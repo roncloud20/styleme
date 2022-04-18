@@ -1,15 +1,17 @@
 import React from "react";
 import Card from "./Card";
+// import Images from "src/images ";
+
 const CardList = ({ styles }) => {
     return (
-      <div>
+      <div className="Main">
         {
             styles.map((style, i) =>{
                 return (
                     <Card 
                         key={i} 
                         id={styles[i].id} 
-                        styleName={styles[i].styleName} 
+                        stylename={styles[i].stylename} 
                         category={styles[i].category} 
                         likes={styles[i].likes} 
                         imageUrl={styles[i].imageUrl} 
