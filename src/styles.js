@@ -4,6 +4,7 @@ export const styles = [
         stylename: 'Cooperate',
         category: ['women'],
         likes: 250,
+        shares: '1M',
         imageUrl: require('./images/coop.jpeg').default,
     },
     {
@@ -11,6 +12,7 @@ export const styles = [
         stylename: 'Ghetto',
         category: ['women'],
         likes: 187,
+        shares: '2022',
         imageUrl: require('./images/ghetto.jpeg').default,
     },
     {
@@ -18,6 +20,7 @@ export const styles = [
         stylename: 'Party Slay',
         category: ['women'],
         likes: 1175,
+        shares: '502',
         imageUrl: require('./images/pari.jpeg').default,
     },
     {
@@ -25,6 +28,7 @@ export const styles = [
         stylename: 'Slay Queen',
         category: ['women'],
         likes: 1014,
+        shares: '321',
         imageUrl: require('./images/slay.jpeg').default,
     },
     {
@@ -32,6 +36,7 @@ export const styles = [
         stylename: 'Wifey',
         category: ['women'],
         likes: 335,
+        shares: '112',
         imageUrl: require('./images/wifey.jpeg').default,
     }
 ]

@@ -14,6 +14,7 @@ const CardList = ({ styles }) => {
                         stylename={styles[i].stylename} 
                         category={styles[i].category} 
                         likes={styles[i].likes} 
+                        shares={styles[i].shares} 
                         imageUrl={styles[i].imageUrl} 
                     />
                 );

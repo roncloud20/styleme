@@ -2,19 +2,23 @@
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
 /* HEADER */
 header {
-  background-color: #000407;
-  /* min-height: 100vh; */
+  background-color: #edb518;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
-  text-transform: uppercase;
-  font-family: monospace;
+  font-family: poppins;
   margin-bottom: 20px;
+  padding: 20px;
+}
+
+header > span {
+  font-weight: bold;
 }
 
 nav {
@@ -22,6 +26,7 @@ nav {
   flex-flow: wrap;
   justify-content: center;
 }
+
 nav > li {
   list-style: none;
   padding: 0px 10px;
@@ -46,8 +51,8 @@ nav > li > a:hover {
   background-color: #edb518;
   box-shadow: #000407;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 40px;
   font-size: 20px;
   font-weight: bolder;
@@ -59,12 +64,39 @@ nav > li > a:hover {
   background-size: cover;
 }
 
+.CardDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.CardLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.SearchNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  color: #edb518;
+  background-color: white;
+  width: 250px;
+  border-radius: 50px;
+  padding: 5px 20px 5px 20px;
+}
+
+.SearchNav > input{
+  border: none;
+  width: 90%;
+}
+
 /* Web View */
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 426px) {
   .Main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     display: flex;
     gap: 20px;
     flex-flow: row wrap;
@@ -75,5 +107,22 @@ nav > li > a:hover {
     width: 400px;
     height: 500px;
     border-radius: 10px;
+  }
+
+  .SearchNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    color: #edb518;
+    background-color: white;
+    /* width: 80px; */
+    border-radius: 50px;
+    padding: 5px 20px 5px 20px;
+  }
+
+  .SearchNav > input{
+    border: none;
   }
 }

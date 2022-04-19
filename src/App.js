@@ -3,6 +3,7 @@ import './App.css';
 import CardList from './CardList';
 import { styles } from './styles';
 import SearchBox from './SearchBox';
+import { FaUserCircle} from 'react-icons/fa';
 
 class App extends Component {
   constructor() {
@@ -24,9 +25,7 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1>
-            Style Me
-          </h1>
+          <span>style me</span>
           <SearchBox searchChange={this.onSearchChange} />
           {/* <nav>
             <li><a href="#women" placeholder="women">women</a></li>
@@ -38,6 +37,9 @@ class App extends Component {
             <li><a href="#families" placeholder="families">families</a></li>
             <li><a href="#asoebi" placeholder="asoebi">asoebi</a></li>
           </nav> */}
+          <div>
+            <FaUserCircle size={'25px'}/>
+          </div>
         </header>
         <main>
           <CardList styles={filteredStyles} />
