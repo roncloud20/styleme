@@ -10,7 +10,7 @@ class App extends Component {
     super()
     this.state = {
       styles: styles,
-      searhfield: ''
+      searchfield: ''
     }
   }
 
@@ -19,8 +19,8 @@ class App extends Component {
   }
   
   render() {
-    const filteredStyles = this.state.styles.filter(styles =>{
-      return styles.stylename.toLowerCase().includes(this.state.searhfield.toLowerCase())
+    const filteredStyles = this.state.styles.filter(style =>{
+      return style.stylename.toLowerCase().includes(this.state.searchfield.toLowerCase())
     })
     return (
       <div className="App">

@@ -9,7 +9,7 @@ const CardList = ({ styles }) => {
             styles.map((style, i) =>{
                 return (
                     <Card 
-                        key={i} 
+                        key={styles[i].id} 
                         id={styles[i].id} 
                         stylename={styles[i].stylename} 
                         category={styles[i].category} 

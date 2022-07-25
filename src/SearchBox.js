@@ -2,7 +2,7 @@ import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 import 'tachyons';
 
-const SearchBox = ({ searhfield, searchChange }) => {
+const SearchBox = ({ searchChange }) => {
     return (
         <div className='SearchNav'>
             <input 
@@ -12,7 +12,9 @@ const SearchBox = ({ searhfield, searchChange }) => {
                 onChange={searchChange} 
             />
             |
-            <FaSearch />
+            <button onClick={searchChange}>
+                <FaSearch />
+            </button>
         </div>
     );
 }
